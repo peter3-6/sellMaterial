@@ -1,0 +1,66 @@
+<block wx:if='{{loading}}'>
+  <!-- top背景 -->
+  <view class="decoration_top bc_orange_jb_top o_hidden pr ">
+    <image class="dt_cm w_100" mode="widthFix" src="../../images/curve_mask.png"></image>
+    <image class="dt_back w_100" mode="widthFix" src="../../images/background_1.png"></image>
+  </view>
+  <!--主体  -->
+  <view class="card_price main ta_c pr zi_3">
+    <!--beijing  -->
+    <view class="cp_back bc_f32e"></view>
+    <!--  -->
+    <view class="cp_main bc_white pr fc_333 bs_shallow">
+      <!--头像  -->
+      <image class="cpm_portrait bs_deep" mode="aspectFill" src="{{initdata.avatar?initdata.avatar:'../../images/bytp.png'}}"></image>
+      <!--昵称  -->
+      <view class="fs_36 ">{{initdata.user_nickname}}</view>
+      <!--标题  -->
+      <view class="cpm_title pr fw_b fs_36">
+        <view>{{initdata.title}}</view>
+        <view class="line_after bc_e1"></view>
+      </view>
+      <!--内容  -->
+      <view class="cpm_content updown_arraytop jz">
+        <!--介绍  -->
+        <view class="cc_top left_array jx  fs_32 fc_1abc">{{initdata.summary}}</view>
+        <!--价格  -->
+        <view class="cc_bottom middle_array fkj xsx fw_b">{{initdata.pay_price}}</view>
+      </view>
+      <!--button  -->
+      <view class="cpm_button fs_36 fc_white middle_array bs_far bc_green_jb_left pr" bindtap='payment'>
+
+        点击查看
+      </view>
+    </view>
+    <!--时间  -->
+    <view class="cpm_bottom fs_28 fc_666 pr">{{initdata.update_time}}</view>
+    <!--购买数据  -->
+    <view>
+      <!--人数  -->
+      <view class="fc_333 pr fs_28 ">
+        <view class="middle_array mb_30">
+          <text>购买该赞赏推荐已有</text>
+          <text class="people_buy fs_36 fw_b bc_orange_jb_left fc_white">{{payImg.length}}</text>
+          <text>人</text>
+        </view>
+        <!--头像  -->
+        <view class="people_portrait">
+          <view class="pp_main  left_array jz khh">
+            <!--头像循环  -->
+              <block wx:for='{{payImg}}'>  
+              <view class="ppm_portrait o_hidden bs_deep pr">
+                <image class="lbli_tz br_50" src="{{item}}" lazy-load='true'></image>
+              </view>
+              </block>  
+          </view>
+        </view>
+      </view>
+    </view>
+    <!--返回首页  -->
+    <view class="cpm_home middle_array">
+      <navigator class="lbli_tz" url="/pages/home/home" hover-class="none"></navigator>
+      <image class="home_icon" mode="widthFix" src="../../images/home_icon.png"></image>
+      <view class="fs_24 fc_white"> 返回首页</view>
+    </view>
+  </view>
+</block>

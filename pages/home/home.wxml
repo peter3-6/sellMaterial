@@ -1,0 +1,46 @@
+<!--top  -->
+<view class="introduce_top main">
+  <view class="it_data bc_orange_jb_left pr bs_shallow about_array jz fc_white" bindtap='bindvalue'>
+    <!--背景  -->
+    <image class="cpm_background" mode="widthFix" src="../../images/background_2.png"></image>
+    <!--头像  -->
+    <image class="cpm_portrait bs_deep" mode="aspectFill" src="{{user.avatar}}">
+
+    </image>
+    <button open-type='getUserInfo' bindgetuserinfo='info' class="lbli_tz op_0" wx:if='{{!userInfo.isauth}}' style="z-index: 1000;"></button>
+    <!--昵称  -->
+    <view class="itd_name fs_32">{{user.user_nickname}}</view>
+    <!--数量  -->
+    <view>
+      <!--数  -->
+      <view class="fs_60">{{purchased==0?purchased:total}}
+        <text class="fs_28">篇</text>
+      </view>
+      <!--标题  -->
+      <view class="fs_24">已获得</view>
+    </view>
+  </view>
+</view>
+<!--main  -->
+<view class="content_main main bc_white">
+  <!--循环  -->
+  <view class="cm_list about_array jz pr" wx:for='{{initdata}}'>
+    <navigator class="lbli_tz" url="/pages/details/details?id={{item.id}}" hover-class="none"></navigator>
+    <!--left  -->
+    <view class="left_array jz w_100 o_hidden">
+      <!--头像  -->
+      <image class="cml_portrait xsx" mode="aspectFill" src="{{item.avatar}}"></image>
+      <!--内容与昵称  -->
+      <view class="fc_333 o_hidden w_100">
+        <view class="fs_32 cmlp_title restricted_single">{{item.title}}</view>
+        <view class="fs_24">{{item.summary}}</view>
+      </view>
+    </view>
+    <!--right  -->
+    <view class="xsx ta_r">
+      <view class="cml_money fw_b">{{item.price}}</view>
+      <view class="fs_24 fc_666">{{item.update_time}}</view>
+    </view>
+  </view>
+
+</view>

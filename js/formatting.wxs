@@ -1,0 +1,37 @@
+module.exports = function (num) {
+  if (!num) return ''
+  var data = getDate(num * 1000)
+  // var today = getDate()
+  // var date = today.getDate()
+  // var month = today.getMonth()
+  // var minute = today.getMinutes()
+  // var year = today.getFullYear()
+  // var hour = data.getHours()
+
+  // var startday = getDate(year, month, date, 0, 0, 0);
+  // var yesterday = getDate(year, month, date + 1, 0, 0, 0);
+  // var zuo = getDate(year, month, date - 1, 0, 0, 0);
+  // var qian = getDate(year, month, date + 2, 0, 0, 0);
+
+  // var ttime = startday.getTime();
+  // var ytime = yesterday.getTime();
+  // var qtime = qian.getTime();
+  // var time = data.getTime();
+  // var ztime = zuo.getTime();
+  // if (time > ztime) {
+  //   if (time < ttime) {
+  //     datab = '今天 ' + data.getHours() + ':' + [data.getMinutes() < 10 ? '0' + data.getMinutes() : data.getMinutes()]
+  //   } else if (time < ytime) {
+  //     datab = '明天 ' + data.getHours() + ':' + [data.getMinutes() < 10 ? '0' + data.getMinutes() : data.getMinutes()]
+  //   } else if (time < qtime) {
+  //     datab = '后天 ' + data.getHours() + ':' + [data.getMinutes() < 10 ? '0' + data.getMinutes() : data.getMinutes()]
+  //   } else {
+  //     datab = data.toLocaleDateString()
+  //   }
+  // } else {
+
+  // }
+  datab = data.toLocaleDateString() + data.toLocaleTimeString()
+  datab.replace('GMT+8','')
+  return datab
+}

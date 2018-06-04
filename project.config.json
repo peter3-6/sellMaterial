@@ -1,0 +1,85 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.0.8",
+	"appid": "wx2f8f2a058f390539",
+	"projectname": "%E5%8D%96%E6%96%99%E5%B0%8F%E7%A8%8B%E5%BA%8F3",
+	"svr": "",
+	"client": "",
+	"qcloudRoot": "",
+	"miniprogramRoot": "",
+	"pluginRoot": "",
+	"scripts": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"miniprogram": {
+			"current": 2,
+			"list": [
+				{
+					"id": -1,
+					"name": "付费详情页",
+					"pathName": "pages/details/details",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "88",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": 2,
+					"name": "订单",
+					"pathName": "pages/index/index",
+					"query": "scene=96",
+					"scene": "1011"
+				},
+				{
+					"id": -1,
+					"name": "订单",
+					"pathName": "pages/home/home",
+					"query": "scene=6",
+					"scene": "1011"
+				},
+				{
+					"id": -1,
+					"name": "订单",
+					"pathName": "pages/index/index",
+					"query": "scene=12",
+					"scene": "1011"
+				},
+				{
+					"id": -1,
+					"name": "订单",
+					"pathName": "pages/index/index",
+					"query": "scene=9",
+					"scene": "1011"
+				}
+			]
+		}
+	}
+}

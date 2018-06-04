@@ -1,0 +1,61 @@
+/*主体卡片  */
+
+.card_price {
+  padding-top: 20rpx;
+}
+
+/*主体  */
+
+.cp_main {
+  border-radius: 30rpx;
+  padding: 30rpx 40rpx;
+}
+
+.cpm_title {
+  padding: 0rpx 0 30rpx;
+}
+
+.line_after {
+  width: 496rpx;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+.cpm_content text{
+  text-align: left;
+}
+/*内容  */
+
+.cpm_content {
+  min-height: 740rpx;
+  padding: 40rpx 0;
+}
+
+/*button  */
+
+.cp_button {
+  padding: 40rpx 0;
+}
+
+.cpm_button {
+  width: 352rpx;
+  height: 100rpx;
+  border-radius: 100rpx;
+  margin: 0 auto;
+}
+
+.cpm_bottom {
+  padding-top: 30rpx;
+}
+
+/*卡片样式  */
+
+.cpm_portrait {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  margin-right: 10rpx;
+}

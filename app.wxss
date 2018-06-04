@@ -1,0 +1,361 @@
+/*卖料通用  */
+
+page {
+  background-color: #f3f2ee;
+}
+
+.bc_f32e {
+  background-color: #f3f2ee;
+}
+
+.main {
+  padding: 0rpx 40rpx;
+}
+
+.shadow {
+  box-shadow: 0 10rpx 40rpx rgba(0, 0, 0, 0.2);
+}
+
+.bottom_main {
+  padding-bottom: 100rpx;
+}
+
+.mb_30 {
+  margin-bottom: 30rpx;
+}
+
+/*颜色统用  */
+
+/*白色  */
+
+.bc_white {
+  background-color: #fff;
+}
+
+/*浅灰  */
+
+.bc_e1 {
+  background-color: #e1e1e1;
+}
+
+/*橘黄  */
+
+.bc_orange_jb_top {
+  background: -webkit-linear-gradient(top, #ff6b27, #ff6b27, #fb5e36);
+}
+
+.bc_orange_jb_left {
+  background: -webkit-linear-gradient(left, #fb5e36, #ff6b27);
+}
+
+/*绿色  */
+
+.bc_green_jb_left {
+  background: -webkit-linear-gradient(left, #51aa38, #48d65c);
+}
+
+/*深阴影  */
+
+.bs_deep {
+  box-shadow: 0 20rpx 60rpx rgba(0, 0, 0, 0.2);
+}
+
+/*浅阴影  */
+
+.bs_shallow {
+  box-shadow: 0 20rpx 60rpx rgba(0, 0, 0, 0.1);
+}
+
+/*远距离阴影  */
+
+.bs_far {
+  box-shadow: 0 40rpx 40rpx rgba(0, 0, 0, 0.1);
+}
+
+/*-------------------------------------------------------------------------------------- */
+
+/*通用*/
+
+view, textarea {
+  box-sizing: border-box;
+}
+
+.m0a {
+  margin: 0 auto;
+}
+
+/*防漂浮，撑开父类*/
+
+.Cancel_float:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.pr {
+  position: relative;
+}
+
+.pa {
+  position: absolute;
+}
+
+.w_100 {
+  width: 100%;
+}
+
+.h_100 {
+  height: 100%;
+}
+
+.ta_c {
+  text-align: center;
+}
+
+.ta_l {
+  text-align: left;
+}
+
+.ta_r {
+  text-align: right;
+}
+
+.o_hidden {
+  overflow: hidden;
+}
+
+.d_ib {
+  display: inline-block;
+}
+
+.d_n {
+  display: none;
+}
+
+/*位置  */
+
+.zi_3 {
+  z-index: 3;
+}
+
+/*动画时间*/
+
+.animation_time {
+  transition-duration: 0.25s;
+  -moz-transition-duration: 0.25s;
+  -webkit-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
+}
+
+/* 文本居中 */
+
+.text_center {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/*单行文字剪切*/
+
+.restricted_single {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+/*多行文字剪切  */
+
+.comment_inner {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+/*a标签覆盖链接*/
+
+.lbli_tz {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+/*相对位置居中*/
+
+.absolute_center {
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+/*背景图片剧中自适应展示*/
+
+.avatar_universal {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  z-index: 1;
+}
+
+/*字体大小  */
+
+.fs_0 {
+  font-size: 0;
+}
+
+.fs_24 {
+  font-size: 24rpx;
+}
+
+.fs_28 {
+  font-size: 28rpx;
+}
+
+.fs_32 {
+  font-size: 32rpx;
+}
+
+.fs_36 {
+  font-size: 36rpx;
+}
+
+.fs_42 {
+  font-size: 42rpx;
+}
+
+.fs_48 {
+  font-size: 48rpx;
+}
+
+.fc_white {
+  color: #fff;
+}
+
+.fc_1abc {
+  color: #1a1b1c;
+}
+
+.fc_333 {
+  color: #323338;
+}
+
+.fc_666 {
+  color: #666;
+}
+
+.fw_b {
+  font-weight: bold;
+}
+
+.lh_54 {
+  line-height: 54rpx;
+  text-align: justify;
+}
+
+/* flex布局 */
+
+/* 居中-居上-居下 */
+
+.jz {
+  align-items: center;
+  align-content: center;
+}
+
+.js {
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.jx {
+  align-items: flex-end;
+  align-content: flex-end;
+}
+
+/* 可换行 */
+
+.khh {
+  flex-wrap: wrap;
+}
+
+/* 等分空间 */
+
+.fkj {
+  flex-grow: 1;
+}
+
+/* 禁止缩小 */
+
+.xsx {
+  flex-shrink: 0;
+}
+
+/*左右*/
+
+.about_array {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+}
+
+/*右*/
+
+.right_array {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: flex-end;
+}
+
+/*右倒叙*/
+
+.right_flash {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row-reverse;
+}
+
+/*左*/
+
+.left_array {
+  display: flex;
+  display: -webkit-flex;
+}
+
+/*中*/
+
+.middle_array {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*上下*/
+
+.updown_array {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+}
+
+/*上下顶  */
+
+.updown_arraytop {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/*居中*/
+
+.middle_array {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+}
+.op_0{
+  opacity: 0;
+}

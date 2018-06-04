@@ -1,0 +1,89 @@
+/*top  */
+
+.introduce_top {
+  padding-top: 70rpx;
+  padding-bottom: 52rpx;
+}
+
+.it_data {
+  height: 196rpx;
+  border-radius: 30rpx;
+  padding: 0 50rpx;
+}
+
+/*背景  */
+
+.cpm_background {
+  width: 465rpx;
+  position: absolute;
+  top: -30rpx;
+  right: -30rpx;
+  /* animation: mymove 1s; */
+}
+
+/* @keyframes mymove {
+  0% {
+    transform: translate(100rpx, -100rpx);
+  }
+
+  100% {
+  }
+} */
+
+/*头像  */
+
+.cpm_portrait {
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%;
+  position: absolute;
+  top: -50rpx;
+  left: 50rpx;
+}
+
+/*昵称  */
+
+.itd_name {
+  padding-top: 100rpx;
+}
+
+/*数量  */
+
+.fs_60 {
+  font-size: 60rpx;
+}
+
+/*内容  */
+
+.content_main {
+  min-height: calc(100vh - 318rpx);
+}
+
+.cm_list {
+  padding: 40rpx 0;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.content_main>.cm_list:nth-last-of-type(1) {
+  border-bottom: 0px solid #e1e1e1;
+}
+
+/*头像  */
+
+.cml_portrait {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  margin-right: 20rpx;
+}
+
+.cmlp_title {
+  margin-bottom: 10rpx;
+}
+
+/*right  */
+
+.cml_money {
+  font-size: 48rpx;
+  color: #f45c33;
+}

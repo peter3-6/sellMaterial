@@ -1,0 +1,31 @@
+<!--主体  -->
+<view class="card_price main ta_c pr zi_3">
+  <view class="cp_main bc_white pr fc_333 bs_shallow">
+    <!--标题  -->
+    <view class="cpm_title pr fw_b fs_28">
+      <view>{{initdata.title}}</view>
+      <view class="line_after bc_e1"></view>
+    </view>
+    <!--内容  -->
+    <view class="cpm_content middle_array fs_32 fc_1abc pr">
+      <view class="line_after bc_e1"></view>
+      <text class="ta_l" selectable="true">{{initdata.content}}</text>
+    </view>
+    <view class="cpm_bottom middle_array">
+      <!--头像  -->
+      <image class="cpm_portrait bs_deep" mode="aspectFill" src="{{initdata.avatar}}"></image>
+      <!--昵称  -->
+      <view class="ta_l">
+        <view class="fs_28 fc_333">{{initdata.user_nickname}}</view>
+        <view class="fs_24 fc_666">{{initdata.update_time}}</view>
+      </view>
+    </view>
+  </view>
+  <!--button  -->
+  <view class="cp_button">
+    <view class="cpm_button fs_36 fc_white middle_array bs_far bc_orange_jb_left pr">
+      <navigator class="lbli_tz" url="/pages/home/home" hover-class="none" open-type='reLaunch'></navigator>
+      返回我的心水
+    </view>
+  </view>
+</view>
